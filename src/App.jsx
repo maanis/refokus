@@ -6,7 +6,7 @@ import Stripes from './components/Stripes'
 const App = () => {
     return (
         <>
-            <div className='h-screen w-full bg-zinc-900'>
+            <div className='h-screen overflow-hidden w-full bg-zinc-900'>
                 <Navbar />
                 <Work />
                 <Stripes />
