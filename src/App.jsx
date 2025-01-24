@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 const App = () => {
     return (
         <>
-            <div className='h-[full] w-full text-white bg-[#0c0c0c]'>
+            <div className='h-[full] w-full overflow-x-hidden text-white bg-[#0c0c0c]'>
                 <Navbar />
                 <Work />
                 <Stripes />

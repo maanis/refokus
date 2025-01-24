@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='w-full py-8'>
+        <div className='w-full py-8 relative'>
+            <div className="absolute w-[300px] right-[-230px] top-[-180px] h-[300px] " style={{ background: 'radial-gradient(circle, rgba(0, 255, 170, 0.5), rgba(0, 0, 0, 0))', filter: 'blur(125px)', zIndex: 0, }}></div>
+
             <div className='max-w-screen-lg mx-auto flex items-center  gap-8'>
                 <div className=''>
                     <h2 className='text-[7rem] font-semibold leading-none tracking-tighter'>ReFokus.</h2>
