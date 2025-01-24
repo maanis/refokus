@@ -7,7 +7,7 @@ import Products from './components/Products'
 const App = () => {
     return (
         <>
-            <div className='h-screen overflow-hidden w-full bg-zinc-900'>
+            <div className='h-[full] w-full text-white bg-zinc-900'>
                 <Navbar />
                 <Work />
                 <Stripes />
