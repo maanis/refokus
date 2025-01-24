@@ -8,7 +8,7 @@ import Marquees from './components/Marquees'
 const App = () => {
     return (
         <>
-            <div className='h-[full] w-full text-white bg-zinc-900'>
+            <div className='h-[full] w-full text-white bg-[#0c0c0c]'>
                 <Navbar />
                 <Work />
                 <Stripes />

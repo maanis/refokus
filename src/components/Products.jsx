@@ -34,7 +34,7 @@ const Products = () => {
             btn2: true,
         },
         {
-            id: 6,
+            id: 7,
             title: 'Remind',
             description: 'We enhanced the New York Fashion Week, by creating a fully digital AR fashion experience for Yahoo and Maisie Wilen, featuring holographic 3D models and an integrated web shop.',
             btn2: true,
