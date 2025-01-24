@@ -25,8 +25,10 @@ const Marquees = () => {
         ],
     ]
     return (
-        <div>
-            <Marquee />
+        <div className='mt-32 flex flex-col'>
+            {ImgUrls.map((imgs, idx) => (
+                <Marquee key={idx} imgs={imgs} />
+            ))}
         </div>
     )
 }
