@@ -14,10 +14,13 @@ import Cursor from './components/Cursor';
 const App = () => {
     const scroll = new LocomotiveScroll();
     return (
-        <div className="h-full main pointer-events-none cursor-none overflow-x-hidden w-full text-white bg-[#0c0c0c]">
-            <Navbar />
-            <Work />
-            <Stripes />
+        <div className="h-full main overflow-x-hidden w-full text-white bg-[#0c0c0c]">
+            <div className="relative cursor-none">
+                <Cursor />
+                <Navbar />
+                <Work />
+                <Stripes />
+            </div>
             <Products />
             <Marquees />
             <Cards />

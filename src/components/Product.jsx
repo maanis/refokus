@@ -3,8 +3,9 @@ import Button from './Button'
 
 const Product = ({ title, description, btn2 }) => {
     return (
-        <div className='w-full py-4'>
-            <div className='max-w-screen-lg flex items-center justify-between mx-auto py-10 '>
+        <div className='w-full relative'>
+            <div className='max-w-screen-lg relative h-[14rem] flex items-center justify-between mx-auto'>
+
                 <h2 className='capitalize text-6xl font-semibold '>{title}</h2>
                 <div className='w-1/3'>
                     <p className='mb-6'>{description}</p>
@@ -15,6 +16,7 @@ const Product = ({ title, description, btn2 }) => {
 
                 </div>
             </div>
+
 
         </div>
     )

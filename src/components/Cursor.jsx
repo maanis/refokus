@@ -6,23 +6,27 @@ const Cursor = () => {
     useEffect(() => {
         const updatePosition = (e) => {
             setPosition({ x: e.clientX, y: e.clientY });
+            console.log(e.clientY)
         };
 
-        window.addEventListener('mousemove', updatePosition);
+        let cont = document.querySelector('.cursor-none')
+
+        cont.addEventListener('mousemove', updatePosition);
 
         return () => {
-            window.removeEventListener('mousemove', updatePosition);
+            cont.removeEventListener('mousemove', updatePosition);
         };
-    }, []); 
-    
+    }, []);
+
 
     return (
         <div
-            className="w-[20px] h-[20px] rounded-full fixed -translate-x-1/2 -translate-y-1/2 bg-white"
+            className={`w-[20px] z-50 h-[20px] rounded-full absolute -translate-x-1/2 -translate-y-1/2 bg-white ${position.y >= 645 && 'hidden'}`}
             style={{
                 top: `${position.y}px`,
                 left: `${position.x}px`,
                 mixBlendMode: 'difference',
+                // cursor: 'none',
             }}
         ></div>
     );

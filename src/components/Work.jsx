@@ -46,7 +46,6 @@ const Work = () => {
     });
     return (
         <div className='max-w-screen-lg  flex justify-center items-center select-none text-center text-zinc-300 relative py-8 mx-auto'>
-            <Cursor />
             <div className="absolute  top-[-60px] w-[300px] left-[-200px] h-[300px] " style={{ background: 'radial-gradient(circle, rgba(0, 255, 170, 0.3), rgba(0, 0, 0, 0))', filter: 'blur(135px)', zIndex: 0, }}></div>
             <div className="absolute w-[300px] right-[-200px] bottom-[-70px] h-[300px] " style={{ background: 'radial-gradient(circle, rgba(0, 255, 170, 0.3), rgba(0, 0, 0, 0))', filter: 'blur(135px)', zIndex: 0, }}></div>
             <div className='text-[30vw] leading-none tracking-tight font-medium font-sans'>work</div>

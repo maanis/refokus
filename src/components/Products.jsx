@@ -42,8 +42,26 @@ const Products = () => {
 
     ]
     return (
-        <div className='mt-24'>
-            {products.map(product => <Product key={product.id} title={product.title} description={product.description} btn2={product.btn2} />)}
+        <div className='mt-24 relative'>
+            {products.map(product => (
+                <>
+                    <Product key={product.id} title={product.title} description={product.description} btn2={product.btn2} />
+                    <div className="absolute h-[14rem] w-80 left-[36%] bg-blue-600   z-50 top-[0] rounded-md">
+                        {/* <video src="https://aditya-pawar-1.github.io/Refokus-UI-Clone-React/assets/Arqitel-BXWnuhhk.webm" autoPlay muted loop className='w-full h-full rounded-xl'></video>
+                        <video src="https://aditya-pawar-1.github.io/Refokus-UI-Clone-React/assets/Cula-ZDOHQMHU.mp4" autoPlay muted loop className='w-full h-full rounded-xl'></video>
+                        <video src="https://aditya-pawar-1.github.io/Refokus-UI-Clone-React/assets/TTR-C2lTQdRZ.webm" autoPlay muted loop className='w-full h-full rounded-xl'></video>
+                        <video src="https://aditya-pawar-1.github.io/Refokus-UI-Clone-React/assets/yahoo--FL9ySUE.webm" autoPlay muted loop className='w-full h-full rounded-xl'></video>
+                        <video src="https://aditya-pawar-1.github.io/Refokus-UI-Clone-React/assets/Cula-ZDOHQMHU.mp4" autoPlay muted loop className='w-full h-full rounded-xl'></video>
+                        <video src="https://aditya-pawar-1.github.io/Refokus-UI-Clone-React/assets/Arqitel-BXWnuhhk.webm" autoPlay muted loop className='w-full h-full rounded-xl'></video> */}
+                        <div className=" h-full w-full  bg-blue-300"></div>
+                        <div className=" h-full w-full  bg-red-300"></div>
+                        <div className=" h-full w-full  bg-violet-300"></div>
+                        <div className=" h-full w-full  bg-pink-300"></div>
+                        <div className=" h-full w-full  bg-yellow-300"></div>
+                        <div className=" h-full w-full  bg-yellow-300"></div>
+                    </div>
+                </>
+            ))}
         </div>
     )
 }
