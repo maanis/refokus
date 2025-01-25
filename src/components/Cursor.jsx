@@ -24,7 +24,7 @@ const Cursor = () => {
                 top: `${position.y}px`,
                 left: `${position.x}px`,
                 mixBlendMode: 'difference',
-                pointerEvents: 'none', // Prevent the cursor from interfering with clicks
+                // pointerEvents: 'none', // Prevent the cursor from interfering with clicks
             }}
         ></div>
     );

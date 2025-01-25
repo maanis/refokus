@@ -27,11 +27,17 @@ const App = () => {
     //     // };
     // }, []);
 
+    // const scroll = new LocomotiveScroll({
+    //     el: scrollContainerRef.current,
+    //     smooth: true
+    // });
+
+    const scroll = new LocomotiveScroll();
 
 
 
     return (
-        <div ref={scrollContainerRef} data-scroll-container className="h-full pointer-events-none cursor-none overflow-x-hidden w-full text-white bg-[#0c0c0c]">
+        <div ref={scrollContainerRef} className="h-full main pointer-events-none cursor-none overflow-x-hidden w-full text-white bg-[#0c0c0c]">
             <Navbar />
             <Work />
             <Stripes />
