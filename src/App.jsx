@@ -12,32 +12,10 @@ import Footer from './components/Footer';
 import Cursor from './components/Cursor';
 
 const App = () => {
-    const scrollContainerRef = useRef(null);
-
-
-    // useEffect(() => {
-    //     const scrollInstance = new LocomotiveScroll({
-    //         el: scrollContainerRef.current,
-    //         smooth: true, // Enable smooth scrolling
-    //         lerp: 0.05,    // Adjust smoothness (higher value = less smooth)
-    //     });
-
-    //     // return () => {
-    //     //     scrollInstance.destroy(); // Cleanup Locomotive Scroll on unmount
-    //     // };
-    // }, []);
-
-    // const scroll = new LocomotiveScroll({
-    //     el: scrollContainerRef.current,
-    //     smooth: true
-    // });
-
     const scroll = new LocomotiveScroll();
 
-
-
     return (
-        <div ref={scrollContainerRef} className="h-full main pointer-events-none cursor-none overflow-x-hidden w-full text-white bg-[#0c0c0c]">
+        <div className="h-full main pointer-events-none cursor-none overflow-x-hidden w-full text-white bg-[#0c0c0c]">
             <Navbar />
             <Work />
             <Stripes />

@@ -8,14 +8,13 @@ const Cursor = () => {
             setPosition({ x: e.clientX, y: e.clientY });
         };
 
-        // Add event listener once
         window.addEventListener('mousemove', updatePosition);
 
-        // Clean up the event listener on unmount
         return () => {
             window.removeEventListener('mousemove', updatePosition);
         };
-    }, []); // Empty dependency array ensures this effect runs only once
+    }, []); 
+    
 
     return (
         <div
@@ -24,7 +23,6 @@ const Cursor = () => {
                 top: `${position.y}px`,
                 left: `${position.x}px`,
                 mixBlendMode: 'difference',
-                // pointerEvents: 'none', // Prevent the cursor from interfering with clicks
             }}
         ></div>
     );
