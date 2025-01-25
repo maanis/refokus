@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Product = ({ title, description, btn2, index, setPos }) => {
     return (
-        <div className='w-full relative'>
+        <div className='w-full relative bg-sky-100 mt-1'>
             <div onMouseEnter={() => setPos({ y: index * 14, show: true })} onMouseLeave={() => setPos(prev => ({ ...prev, show: false }))} className='max-w-screen-lg relative h-[14rem] flex items-center justify-between mx-auto'>
 
                 <h2 className='capitalize text-6xl font-semibold '>{title}</h2>
