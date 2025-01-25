@@ -12,7 +12,7 @@ const Stripes = () => {
     ]
     return (
         <>
-            <div className="flex w-full mt-10">
+            <div className="flex w-full mt-14">
                 {data.map((item, index) => (
                     <Stripe data={item} key={index} index={index} />
                 ))}
