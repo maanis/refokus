@@ -9,6 +9,7 @@ import Products from './components/Products';
 import Marquees from './components/Marquees';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
+import Cursor from './components/Cursor';
 
 const App = () => {
     const scrollContainerRef = useRef(null);
@@ -30,7 +31,7 @@ const App = () => {
 
 
     return (
-        <div ref={scrollContainerRef} data-scroll-container className="h-full overflow-x-hidden w-full text-white bg-[#0c0c0c]">
+        <div ref={scrollContainerRef} data-scroll-container className="h-full pointer-events-none cursor-none overflow-x-hidden w-full text-white bg-[#0c0c0c]">
             <Navbar />
             <Work />
             <Stripes />
