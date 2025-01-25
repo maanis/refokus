@@ -13,7 +13,6 @@ import Cursor from './components/Cursor';
 
 const App = () => {
     const scroll = new LocomotiveScroll();
-
     return (
         <div className="h-full main pointer-events-none cursor-none overflow-x-hidden w-full text-white bg-[#0c0c0c]">
             <Navbar />
