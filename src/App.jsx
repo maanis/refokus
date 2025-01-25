@@ -13,20 +13,24 @@ import Footer from './components/Footer';
 const App = () => {
     const scrollContainerRef = useRef(null);
 
-    useEffect(() => {
-        const scrollInstance = new LocomotiveScroll({
-            el: scrollContainerRef.current,
-            smooth: true, // Enable smooth scrolling
-            lerp: 0.05,    // Adjust smoothness (higher value = less smooth)
-        });
 
-        return () => {
-            scrollInstance.destroy(); // Cleanup Locomotive Scroll on unmount
-        };
-    }, []);
+    // useEffect(() => {
+    //     const scrollInstance = new LocomotiveScroll({
+    //         el: scrollContainerRef.current,
+    //         smooth: true, // Enable smooth scrolling
+    //         lerp: 0.05,    // Adjust smoothness (higher value = less smooth)
+    //     });
+
+    //     // return () => {
+    //     //     scrollInstance.destroy(); // Cleanup Locomotive Scroll on unmount
+    //     // };
+    // }, []);
+
+
+
 
     return (
-        <div ref={scrollContainerRef} data-scroll-container className="h-full w-full overflow-x-hidden text-white bg-[#0c0c0c]">
+        <div ref={scrollContainerRef} data-scroll-container className="h-full overflow-x-hidden w-full text-white bg-[#0c0c0c]">
             <Navbar />
             <Work />
             <Stripes />
