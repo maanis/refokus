@@ -3,12 +3,12 @@ import { MdArrowRightAlt } from "react-icons/md";
 
 const Card = ({ start, para, text, width, hover = 'none' }) => {
     return (
-        <div className={`min-h-[24rem] ${hover} transition-all rounded-md p-4 flex flex-col justify-between bg-zinc-800 ${width}`}>
-            <div className='flex flex-col justify-between h-full'>
+        <div className={`min-h-[24rem] ${hover} transition-all rounded-md p-5 flex flex-col justify-between bg-zinc-800 ${width}`}>
+            <div className='flex flex-col justify-between h-full hover:p-[4px] transition-all'>
                 <div>
                     <div className='flex justify-between'>
                         <h3 className='text-sm'>One Heading</h3>
-                        <MdArrowRightAlt />
+                        <MdArrowRightAlt className='text-xl' />
                     </div>
                     <h2 className='text-2xl font-medium mt-5 pr-8'>{text}</h2>
                 </div>
