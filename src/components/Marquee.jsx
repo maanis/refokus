@@ -1,12 +1,38 @@
-import React from 'react'
+import { motion } from 'framer-motion';
+import React from 'react';
 
 const Marquee = ({ imgs }) => {
     return (
-        <div className='flex gap-10 py-12 overflow-x-hidden'>
-            {imgs.map((img, i) => <img key={i} src={img} className='w-28 flex-shrink-0' />)}
-            {imgs.map((img, i) => <img key={i} src={img} />)}
+        <div className="overflow-hidden relative ">
+            <motion.div
+                className="flex gap-20 py-10"
+                initial={{ x: 0 }}
+                animate={{ x: `-${100}%` }}
+                transition={{ duration: 25, ease: "linear", repeat: Infinity }}
+                style={{ display: 'flex', width: '200%' }} // Ensure smooth repetition
+            >
+                {/* Duplicate images to ensure seamless looping */}
+                {imgs.concat(imgs).map((img, index) => (
+                    <img
+                        key={index}
+                        src={img}
+                        alt={`Logo ${index}`}
+                        className="w-28 flex-shrink-0"
+                        style={{ display: 'block' }}
+                    />
+                ))}
+                {imgs.concat(imgs).map((img, index) => (
+                    <img
+                        key={index}
+                        src={img}
+                        alt={`Logo ${index}`}
+                        className="w-28 flex-shrink-0"
+                        style={{ display: 'block' }}
+                    />
+                ))}
+            </motion.div>
         </div>
-    )
-}
+    );
+};
 
-export default Marquee
+export default Marquee;

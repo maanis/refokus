@@ -25,10 +25,10 @@ const Marquees = () => {
         ],
     ]
     return (
-        <div className='mt-32 flex flex-col relative'>
+        <div className='mt-32 w-full flex flex-col relative'>
             <div className="absolute top-[-120px] w-[300px] left-[-150px] h-[200px] " style={{ background: 'radial-gradient(circle, rgba(0, 255, 170, 0.5), rgba(0, 0, 0, 0))', filter: 'blur(125px)', zIndex: 0, }}></div>
             {ImgUrls.map((imgs, idx) => (
-                <Marquee key={idx} imgs={imgs} />
+                <Marquee key={idx} index={idx} imgs={imgs} />
             ))}
         </div>
     )
