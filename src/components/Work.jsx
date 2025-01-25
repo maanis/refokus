@@ -13,7 +13,9 @@ const Work = () => {
 
     const showImg = (val) => {
         setimages(prev => (
-            
+            prev.map((img, index) => (
+                val.indexOf(index) === -1 ? { ...img, isActive: false } : { ...img, isActive: true }
+            ))
         ))
     }
 
@@ -24,25 +26,25 @@ const Work = () => {
             case 0:
                 showImg([])
                 break;
-            case 1:
+            case 2:
                 showImg([0])
                 break;
-            case 2:
+            case 4:
                 showImg([0, 1])
                 break;
-            case 3:
+            case 5:
                 showImg([0, 1, 2])
                 break;
-            case 4:
+            case 6:
                 showImg([0, 1, 2, 3])
                 break;
-            case 5:
+            case 7:
                 showImg([0, 1, 2, 3, 4])
                 break;
         }
     });
     return (
-        <div className='max-w-screen-lg flex justify-center items-center select-none text-center text-zinc-300 relative py-6 mx-auto'>
+        <div className='max-w-screen-lg  flex justify-center items-center select-none text-center text-zinc-300 relative py-8 mx-auto'>
             <div className="absolute  top-[-60px] w-[300px] left-[-200px] h-[300px] " style={{ background: 'radial-gradient(circle, rgba(0, 255, 170, 0.3), rgba(0, 0, 0, 0))', filter: 'blur(135px)', zIndex: 0, }}></div>
             <div className="absolute w-[300px] right-[-200px] bottom-[-70px] h-[300px] " style={{ background: 'radial-gradient(circle, rgba(0, 255, 170, 0.3), rgba(0, 0, 0, 0))', filter: 'blur(135px)', zIndex: 0, }}></div>
             <div className='text-[30vw] leading-none tracking-tight font-medium font-sans'>work</div>
