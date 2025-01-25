@@ -31,18 +31,6 @@ const Products = () => {
             title: 'YIR',
             description: `We enhanced the New York Fashion Week, by creating a fully digital AR fashion experience for Yahoo and Maisie Wilen, featuring holographic 3D models and an integrated web shop.`,
             btn2: false,
-        },
-        {
-            id: 6,
-            title: 'Yahoo!',
-            description: 'With a continuous 3D animation, we showcase Arqitel approach and show how migration data translates into real estate.',
-            btn2: true,
-        },
-        {
-            id: 7,
-            title: 'Remind',
-            description: 'We enhanced the New York Fashion Week, by creating a fully digital AR fashion experience for Yahoo and Maisie Wilen, featuring holographic 3D models and an integrated web shop.',
-            btn2: true,
         }
 
     ]
@@ -59,8 +47,6 @@ const Products = () => {
                             <motion.div animate={{ y: -pos.y + `rem` }} className=" h-full w-full"><video width={"450px"} transition={{ ease: [0.87, 0, 0.13, 1], duration: .5 }} src={video2} autoPlay muted loop className={`w-full h-full rounded-lg object-cover ${!pos.show ? 'hidden' : ''}`}></video></motion.div>
                             <motion.div animate={{ y: -pos.y + `rem` }} className=" h-full w-full"><video width={"450px"} transition={{ ease: [0.87, 0, 0.13, 1], duration: .5 }} src={video3} autoPlay muted loop className={`w-full h-full rounded-lg object-cover ${!pos.show ? 'hidden' : ''}`}></video></motion.div>
                             <motion.div animate={{ y: -pos.y + `rem` }} className=" h-full w-full"><video width={"450px"} transition={{ ease: [0.87, 0, 0.13, 1], duration: .5 }} src={video4} autoPlay muted loop className={`w-full h-full rounded-lg object-cover ${!pos.show ? 'hidden' : ''}`}></video></motion.div>
-                            <motion.div animate={{ y: -pos.y + `rem` }} className=" h-full w-full"><video width={"450px"} transition={{ ease: [0.87, 0, 0.13, 1], duration: .5 }} src={video2} autoPlay muted loop className={`w-full h-full rounded-lg object-cover ${!pos.show ? 'hidden' : ''}`}></video></motion.div>
-                            <motion.div animate={{ y: -pos.y + `rem` }} className=" h-full w-full"><video width={"450px"} transition={{ ease: [0.87, 0, 0.13, 1], duration: .5 }} src={video3} autoPlay muted loop className={`w-full h-full rounded-lg object-cover ${!pos.show ? 'hidden' : ''}`}></video></motion.div>
                         </motion.div>
                     </div >
                 </div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Marquee = ({ imgs }) => {
     return (
-        <div className="overflow-hidden relative ">
+        <div className="overflow-hidden relative" style={{ maskImage: 'linear-gradient(to right, transparent, black 30%, black 70%, transparent)' }}>
             <motion.div
                 className="flex gap-20 py-10"
                 initial={{ x: 0 }}
