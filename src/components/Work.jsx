@@ -8,6 +8,7 @@ const Work = () => {
         { url: 'https://assets-global.website-files.com/6334198f239547f2fccd84c1/650c5f12d26da475b2fd6b88_15.webp', top: '46%', left: '58%', z: 20, isActive: false },
         { url: 'https://assets-global.website-files.com/6334198f239547f2fccd84c1/64cd6ec7666ac6009cfcb7db_11.jpg', top: '60%', left: '54%', z: 30, isActive: false },
         { url: 'https://assets-global.website-files.com/6334198f239547f2fccd84c1/65f112dec7a59534cca51a3d_portfolioCard_cc-01-p-1080.webp', top: '67%', left: '49%', z: 40, isActive: false },
+        
     ])
     const { scrollY, scrollYProgress } = useScroll();
 
