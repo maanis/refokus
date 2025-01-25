@@ -6,7 +6,6 @@ const Cursor = () => {
     useEffect(() => {
         const updatePosition = (e) => {
             setPosition({ x: e.clientX, y: e.clientY });
-            console.log(e.clientY)
         };
 
         let cont = document.querySelector('.cursor-none')
