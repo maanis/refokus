@@ -13,14 +13,14 @@ const Footer = () => {
                     <div className='flex flex-col min-h-[10rem] justify-between'>
                         <h3 className='text-zinc-500'>Socials</h3>
                         <div className='flex flex-col'>
-                            {['Instagram', 'Twitter(X?)', 'LinkeDin'].map(e => <a href='#' className='mb-2 text-zinc-500'>{e}</a>)}
+                            {['Instagram', 'Twitter(X?)', 'LinkeDin'].map((e, index) => <a key={index} href='#' className='mb-2 text-zinc-500'>{e}</a>)}
                         </div>
                     </div>
 
                     <div className='flex flex-col min-h-[10rem] justify-between'>
                         <h3 className='text-zinc-500'>Socials</h3>
                         <div className='flex flex-col'>
-                            {['Instagram', 'Twitter(X?)', 'LinkeDin'].map(e => <a href='#' className='mb-2 text-zinc-500'>{e}</a>)}
+                            {['Instagram', 'Twitter(X?)', 'LinkeDin'].map((e, index) => <a key={index} href='#' className='mb-2 text-zinc-500'>{e}</a>)}
                         </div>
                     </div>
 
