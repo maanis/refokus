@@ -1,3 +1,4 @@
+import { useScroll } from 'framer-motion'
 import React, { useState } from 'react'
 
 const Work = () => {
@@ -8,6 +9,7 @@ const Work = () => {
         { url: 'https://assets-global.website-files.com/6334198f239547f2fccd84c1/64cd6ec7666ac6009cfcb7db_11.jpg', top: '60%', left: '54%', z: 30, isActive: false },
         { url: 'https://assets-global.website-files.com/6334198f239547f2fccd84c1/65f112dec7a59534cca51a3d_portfolioCard_cc-01-p-1080.webp', top: '67%', left: '49%', z: 40, isActive: false },
     ])
+    const { scrollY } = useScroll()
     return (
         <div className='max-w-screen-lg flex justify-center items-center select-none text-center text-zinc-300 relative py-6 mx-auto'>
             <div className="absolute  top-[-60px] w-[300px] left-[-200px] h-[300px] " style={{ background: 'radial-gradient(circle, rgba(0, 255, 170, 0.3), rgba(0, 0, 0, 0))', filter: 'blur(135px)', zIndex: 0, }}></div>
