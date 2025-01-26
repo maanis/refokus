@@ -1,8 +1,11 @@
 import React from 'react'
+import Marq from './Marq'
 
 const Marqs = () => {
     return (
-        <div>Marqs</div>
+        <div className='mt-14'>
+            <Marq />
+        </div>
     )
 }
 

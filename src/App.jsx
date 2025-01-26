@@ -10,6 +10,7 @@ import Marquees from './components/Marquees';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
 import Cursor from './components/Cursor';
+import Marqs from './components/Marqs';
 
 const App = () => {
     const scroll = new LocomotiveScroll();
@@ -20,7 +21,8 @@ const App = () => {
             <Work />
             <Stripes />
             <Products />
-            <Marquees />
+            {/* <Marquees /> */}
+            <Marqs />
             <Cards />
             <Footer />
         </div>

@@ -25,7 +25,7 @@ const Cursor = () => {
                 top: `${position.y}px`,
                 left: `${position.x}px`,
                 mixBlendMode: 'difference',
-                pointerEvents: 'none', // Ensures the custom cursor doesn't block interactions
+                pointerEvents: 'none',
             }}
         ></div>
     );
