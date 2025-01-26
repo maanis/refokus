@@ -4,7 +4,8 @@ import Marq from './Marq'
 const Marqs = () => {
     return (
         <div className='mt-14'>
-            <Marq />
+            <Marq dir={'left'} />
+            <Marq dir={'right'} />
         </div>
     )
 }
