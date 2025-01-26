@@ -4,7 +4,7 @@ import { HiBars2 } from "react-icons/hi2";
 
 const Navbar = () => {
     return (
-        <div className='max-w-screen-lg border-b-[1px] max-lg:px-10 border-zinc-700 mx-auto flex justify-between items-center px-3 py-6'>
+        <div className='max-w-screen-lg border-b-[1px] max-lg:px-10 max-sm:px-5  border-zinc-700 mx-auto flex justify-between items-center px-3 py-6'>
             <div className="flex gap-16">
                 <img src="https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1802_refokus%20logo.svg" alt="" />
                 <div className="flex items-center gap-6 max-lg:gap-2 max-md:hidden">
