@@ -5,27 +5,27 @@ const Cursor = () => {
 
     useEffect(() => {
         const updatePosition = (e) => {
-            setPosition({ x: e.clientX, y: e.clientY });
+            setPosition({
+                x: e.clientX + window.scrollX,
+                y: e.clientY + window.scrollY,
+            });
         };
 
-        let cont = document.querySelector('.cursor-none')
-
-        cont.addEventListener('mousemove', updatePosition);
+        window.addEventListener('mousemove', updatePosition);
 
         return () => {
-            cont.removeEventListener('mousemove', updatePosition);
+            window.removeEventListener('mousemove', updatePosition);
         };
     }, []);
 
-
     return (
         <div
-            className={`w-[20px] z-50 h-[20px] rounded-full absolute -translate-x-1/2 -translate-y-1/2 bg-white ${position.y >= 645 && 'hidden'}`}
+            className={`w-[20px] z-50 h-[20px] custom-cursor rounded-full absolute -translate-x-1/2 -translate-y-1/2 bg-white`}
             style={{
                 top: `${position.y}px`,
                 left: `${position.x}px`,
                 mixBlendMode: 'difference',
-                // cursor: 'none',
+                pointerEvents: 'none', // Ensures the custom cursor doesn't block interactions
             }}
         ></div>
     );
