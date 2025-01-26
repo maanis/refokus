@@ -13,33 +13,39 @@ const Products = () => {
             title: 'Arqitel',
             description: 'With a continuous 3D animation, we showcase Arqitel approach and show how migration data translates into real estate.',
             btn2: false,
+            gradient: `bg-gradient-to-r from-[rgba(4,0,69,1)] via-[rgba(80,6,130,1)] to-[rgba(0,212,255,1)]`
+
         },
         {
             id: 2,
             title: 'cula',
             description: `We immersed ourselves in a 3D world we created to explain how Cula's platform collects data from carbon removal processes and converts them into carbon credit certificates.`,
             btn2: false,
+            gradient: `bg-[radial-gradient(circle,_rgba(238,174,202,1)_0%,_rgba(148,187,233,1)_100%)]`
         },
         {
             id: 3,
             title: 'TTR',
             description: `We've created an interactive site using generative AI to allow users to engage with our thinking about Ai, industry trends and design.`,
             btn2: true,
+            gradient: `bg-[linear-gradient(123deg,_rgba(16,16,31,1)_0%,_rgba(46,91,145,1)_100%)]`
         },
         {
             id: 4,
             title: 'YIR',
             description: `We enhanced the New York Fashion Week, by creating a fully digital AR fashion experience for Yahoo and Maisie Wilen, featuring holographic 3D models and an integrated web shop.`,
             btn2: false,
+            gradient: `bg-[linear-gradient(0deg,_rgba(34,193,195,1)_0%,_rgba(253,187,45,1)_100%)]`
         }
 
     ]
     const [pos, setpos] = useState({ y: 0, show: false })
+
     return (
         <div className='mt-24 relative'>
             {products.map((product, index) => (
                 <div key={index}>
-                    <Product title={product.title} index={index} setPos={setpos} description={product.description} btn2={product.btn2} />
+                    <Product title={product.title} show={pos.show} index={index} gradient={product.gradient} setPos={setpos} description={product.description} btn2={product.btn2} />
                     <div className="absolute h-full w-full top-[0] pointer-events-none">
 
                         <motion.div initial={{ y: 0, x: "-50%" }} transition={{ ease: [0.87, 0, 0.13, 1], duration: .6 }} animate={{ y: pos.y + `rem` }} className="window h-[14rem] w-80 absolute overflow-hidden pointer-events-none  left-[45%] -translate-x-1/2">
