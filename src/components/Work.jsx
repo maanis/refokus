@@ -45,11 +45,11 @@ const Work = () => {
         }
     });
     return (
-        <div className='max-w-screen-lg  flex justify-center items-center select-none text-center text-zinc-300 relative py-8 mx-auto'>
+        <div className='max-w-screen-lg max-md:max-w-screen-2xl max-lg:min-h-[60vh] max-md:min-h-[70vh]  flex justify-center items-center select-none text-center text-zinc-300 relative py-8 mx-auto'>
             <div className="absolute  top-[-60px] w-[300px] left-[-200px] h-[300px] " style={{ background: 'radial-gradient(circle, rgba(0, 255, 170, 0.3), rgba(0, 0, 0, 0))', filter: 'blur(135px)', zIndex: 0, }}></div>
             <div className="absolute w-[300px] right-[-200px] bottom-[-70px] h-[300px] " style={{ background: 'radial-gradient(circle, rgba(0, 255, 170, 0.3), rgba(0, 0, 0, 0))', filter: 'blur(135px)', zIndex: 0, }}></div>
             <div className='text-[30vw] leading-none tracking-tight font-medium font-sans'>work</div>
-            {images.map((img, index) => img.isActive && <img key={index} src={img.url} className={`absolute z-${img.z} w-72 rounded-lg object-cover -translate-x-1/2 -translate-y-1/2`} style={{ top: img.top, left: img.left }} />)}
+            {images.map((img, index) => img.isActive && <img key={index} src={img.url} className={`absolute z-${img.z} w-72 max-lg:w-56 max-md:w-36 max-sm:w-32 rounded-lg object-cover -translate-x-1/2 -translate-y-1/2`} style={{ top: img.top, left: img.left }} />)}
         </div>
     )
 }
