@@ -14,6 +14,7 @@ const App = () => {
     const scroll = new LocomotiveScroll();
     return (
         <div className="h-full main overflow-x-hidden w-full text-white bg-[#0c0c0c]">
+
             {/* <Cursor /> */}
             <Navbar />
             <Work />
