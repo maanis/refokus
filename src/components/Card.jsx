@@ -1,6 +1,7 @@
 import React from 'react'
 import { MdArrowRightAlt } from "react-icons/md";
 
+
 const Card = ({ start, para, text, width, hover = 'none' }) => {
     return (
         <div className={`min-h-[24rem] ${start ? 'max-md:min-h-[18rem]' : 'max-md:min-h-[8rem]'} ${hover} transition-all rounded-md p-5 max-md:p-4 flex flex-col justify-between bg-zinc-800 ${width}`}>
